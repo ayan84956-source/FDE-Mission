@@ -1,0 +1,6 @@
+ollama
+streamlit
+PyMuPDF
+python-docx
+pytesseract
+imap-tools

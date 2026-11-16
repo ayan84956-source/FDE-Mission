@@ -1,0 +1,21 @@
+Rahul Mehta
+Email: rahul.mehta@example.com | Phone: 98XXXXXX01
+Location: Ahmedabad, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs and data pipelines.
+
+EXPERIENCE
+Software Engineer, TechNova Pvt Ltd (2021 - 2023) - 2 years
+- Built REST APIs in Python (Flask) and PostgreSQL.
+- Wrote unit tests with pytest.
+
+Backend Developer, CloudWorks (2023 - Present) - 1 year
+- Developed microservices using Python and FastAPI.
+- Currently learning Docker and Kubernetes.
+
+EDUCATION
+B.Tech in Computer Engineering, Gujarat Technological University, 2021
+
+SKILLS
+Python, Flask, FastAPI, PostgreSQL, SQL, Git, pytest
