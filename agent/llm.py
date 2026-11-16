@@ -1,7 +1,7 @@
 import json
 import time
 import ollama
-from config import setting
+from config import settings
 
 def ask_json(prompt):
     """Send a prompt to local model.
@@ -11,13 +11,13 @@ def ask_json(prompt):
     the resume for a human instead of creashing.
     """
     start = time.time()
-    for attemps in range(setting.MAX_RETRIVE + 1):
+    for attemps in range(settings.MAX_RETRIVE + 1):
         response = ollama.chat(
-            model = setting.MODEL_NAME,
+            model = settings.MODEL_NAME,
             messages=[{"role": "user", "content": prompt}],
             format = "json",
-            options = {"temperature": setting.TEMPERATURE},
-            keep_alive = setting.KEEP_ALIVE,
+            options = {"temperature": settings.TEMPERATURE},
+            keep_alive = settings.KEEP_ALIVE,
         )
         raw = response["message"]["content"]
         try:

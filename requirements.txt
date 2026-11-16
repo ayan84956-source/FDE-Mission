@@ -4,3 +4,5 @@ PyMuPDF
 python-docx
 pytesseract
 imap-tools
+PyMuPDF 
+python-docx
