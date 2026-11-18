@@ -50,7 +50,7 @@ def evaluate(facts, checklist):
 
     must_statuses = [row["status"] for row in must]
     if NOT_MET in must_statuses:
-        label, note = "need_review", "Missing a must-have"
+        label, note = "needs_review", "Missing a must-have"
     elif UNKNOWN in must_statuses:
         label, note = "needs_review", "Could not confirm a must-have"
     else:

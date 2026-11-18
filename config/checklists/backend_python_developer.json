@@ -5,8 +5,7 @@
     "min_years_experience": 2.0,
     "required_skills": [
       "Python",
-      "SQL",
-      "Java"
+      "SQL"
     ],
     "locations": [
       "Ahmedabad",
@@ -16,7 +15,7 @@
   },
   "nice_to_have": {
     "skills": [
-      "Docker,",
+      "Docker",
       "AWS",
       "FastAPI",
       "Kubernetes"
