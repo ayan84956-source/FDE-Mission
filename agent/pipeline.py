@@ -30,14 +30,14 @@ def process_resume(path, checklist):
     )
     return "ok", score, time.time() - start
 
-def run(folder, job_name, force= False):
+def run(folder, job_name, force= False, pattern= "*"):
     database.init_db()
     checklist = load_checklist(job_name)
     job_id = checklist["job_id"]
 
     files = [
         f
-        for f in sorted(folder.iterdir())
+        for f in sorted(folder.glob(pattern))
         if f.is_file() and not f.name.startswith((".", "~$"))
     ]
     print(f"Found {len(files)} files for {checklist['title']}")
