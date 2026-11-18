@@ -1,31 +1,31 @@
-file,name,expected_label,expected_nice_count,header_style
-resume_00.txt,Aarav Patel,needs_review,0,0
-resume_01.txt,Diya Shah,strong_match,1,1
-resume_02.txt,Kabir Desai,strong_match,1,2
-resume_03.txt,Meera Joshi,needs_review,2,0
-resume_04.txt,Vihaan Trivedi,needs_review,4,1
-resume_05.txt,Ananya Mehta,needs_review,2,2
-resume_06.txt,Arjun Parikh,needs_review,0,0
-resume_07.txt,Isha Bhatt,strong_match,0,1
-resume_08.txt,Rohan Modi,strong_match,4,2
-resume_09.txt,Sneha Gandhi,needs_review,4,0
-resume_10.txt,Aarav Shah,needs_review,4,1
-resume_11.txt,Diya Desai,needs_review,0,2
-resume_12.txt,Kabir Joshi,strong_match,3,0
-resume_13.txt,Meera Trivedi,needs_review,2,1
-resume_14.txt,Vihaan Mehta,needs_review,2,2
-resume_15.txt,Ananya Parikh,strong_match,2,0
-resume_16.txt,Arjun Bhatt,strong_match,2,1
-resume_17.txt,Isha Modi,needs_review,4,2
-resume_18.txt,Rohan Gandhi,needs_review,4,0
-resume_19.txt,Sneha Patel,strong_match,1,1
-resume_20.txt,Aarav Desai,needs_review,0,2
-resume_21.txt,Diya Joshi,strong_match,4,0
-resume_22.txt,Kabir Trivedi,needs_review,1,1
-resume_23.txt,Meera Mehta,needs_review,0,2
-resume_24.txt,Vihaan Parikh,needs_review,0,0
-resume_25.txt,Ananya Bhatt,strong_match,1,1
-resume_26.txt,Arjun Modi,strong_match,0,2
-resume_27.txt,Isha Gandhi,strong_match,3,0
-resume_28.txt,Rohan Patel,strong_match,3,1
-resume_29.txt,Sneha Shah,needs_review,2,2
+file,name,expected_label,expected_nice_count,header_style,years,skills,location
+resume_00.txt,Aarav Patel,needs_review,0,0,1,Python;Git;SQL,"Surat, Gujarat"
+resume_01.txt,Diya Shah,strong_match,1,1,8,Python;Git;SQL;AWS,"Surat, Gujarat"
+resume_02.txt,Kabir Desai,strong_match,1,2,8,Python;Git;SQL;Kubernetes,"Surat, Gujarat"
+resume_03.txt,Meera Joshi,needs_review,2,0,0,Python;Git;SQL;AWS;Docker,"Gandhinagar, Gujarat"
+resume_04.txt,Vihaan Trivedi,needs_review,4,1,1,Python;Git;SQL;FastAPI;Docker;AWS;Kubernetes,"Pune, Maharashtra"
+resume_05.txt,Ananya Mehta,needs_review,2,2,1,Python;Git;SQL;AWS;FastAPI,"Ahmedabad, Gujarat"
+resume_06.txt,Arjun Parikh,needs_review,0,0,2,Python;Git;MongoDB,"Pune, Maharashtra"
+resume_07.txt,Isha Bhatt,strong_match,0,1,3,Python;Git;SQL,"Surat, Gujarat"
+resume_08.txt,Rohan Modi,strong_match,4,2,8,Python;Git;SQL;AWS;FastAPI;Kubernetes;Docker,"Ahmedabad, Gujarat"
+resume_09.txt,Sneha Gandhi,needs_review,4,0,0,Python;Git;SQL;FastAPI;Docker;AWS;Kubernetes,"Surat, Gujarat"
+resume_10.txt,Aarav Shah,needs_review,4,1,6,Python;Git;SQL;FastAPI;Kubernetes;AWS;Docker,"Pune, Maharashtra"
+resume_11.txt,Diya Desai,needs_review,0,2,2,Java;Git;SQL,"Ahmedabad, Gujarat"
+resume_12.txt,Kabir Joshi,strong_match,3,0,2,Python;Git;SQL;Kubernetes;FastAPI;AWS,"Surat, Gujarat"
+resume_13.txt,Meera Trivedi,needs_review,2,1,0,Python;Git;SQL;FastAPI;Docker,"Pune, Maharashtra"
+resume_14.txt,Vihaan Mehta,needs_review,2,2,4,Python;Git;SQL;AWS;FastAPI,"Mumbai, Maharashtra"
+resume_15.txt,Ananya Parikh,strong_match,2,0,3,Python;Git;SQL;AWS;FastAPI,"Surat, Gujarat"
+resume_16.txt,Arjun Bhatt,strong_match,2,1,3,Python;Git;SQL;AWS;Docker,"Ahmedabad, Gujarat"
+resume_17.txt,Isha Modi,needs_review,4,2,1,Python;Git;SQL;AWS;Docker;Kubernetes;FastAPI,"Gandhinagar, Gujarat"
+resume_18.txt,Rohan Gandhi,needs_review,4,0,8,Java;Git;SQL;AWS;FastAPI;Kubernetes;Docker,"Surat, Gujarat"
+resume_19.txt,Sneha Patel,strong_match,1,1,3,Python;Git;SQL;Docker,"Gandhinagar, Gujarat"
+resume_20.txt,Aarav Desai,needs_review,0,2,0,Python;Git;SQL,"Surat, Gujarat"
+resume_21.txt,Diya Joshi,strong_match,4,0,2,Python;Git;SQL;AWS;Kubernetes;FastAPI;Docker,"Surat, Gujarat"
+resume_22.txt,Kabir Trivedi,needs_review,1,1,2,Python;Git;MongoDB;Kubernetes,"Gandhinagar, Gujarat"
+resume_23.txt,Meera Mehta,needs_review,0,2,1,Python;Git;SQL,"Surat, Gujarat"
+resume_24.txt,Vihaan Parikh,needs_review,0,0,1,Python;Git;SQL,"Mumbai, Maharashtra"
+resume_25.txt,Ananya Bhatt,strong_match,1,1,8,Python;Git;SQL;Docker,"Gandhinagar, Gujarat"
+resume_26.txt,Arjun Modi,strong_match,0,2,8,Python;Git;SQL,"Ahmedabad, Gujarat"
+resume_27.txt,Isha Gandhi,strong_match,3,0,2,Python;Git;SQL;Docker;Kubernetes;AWS,"Ahmedabad, Gujarat"
+resume_28.txt,Rohan Patel,strong_match,3,1,4,Python;Git;SQL;Kubernetes;Docker;FastAPI,"Gandhinagar, Gujarat"
+resume_29.txt,Sneha Shah,needs_review,2,2,2,Java;Git;SQL;Docker;Kubernetes,"Surat, Gujarat"

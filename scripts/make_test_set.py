@@ -48,20 +48,21 @@ def make_resume(number):
     lines += ["", "EDUCATION", f"B.Tech in Computer Engineering, {2025 - years}", "", "SKILLS", ", ".join(skills)]
 
     strong = years >= 2 and has_python and has_sql and in_state
-    return name, "\n".join(lines), ("strong_match" if strong else "needs_review"), len(nice), style
+    expected = "strong_match" if strong else "needs_review"
+    return name, "\n".join(lines), expected, len(nice), style, years, skills, location
 
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     rows = []
     for number in range(30):
-        name, text, expected, nice_count, style = make_resume(number)
+        name, text, expected, nice_count, style, years, skills, location = make_resume(number)        
         file_name = f"resume_{number:02d}.txt"
         (OUT_DIR / file_name).write_text(text, encoding="utf-8")
-        rows.append([file_name, name, expected, nice_count, style])
+        rows.append([file_name, name, expected, nice_count, style, years, ";".join(skills), location])
 
     with open(OUT_DIR / "answers.csv", "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["file", "name", "expected_label", "expected_nice_count", "header_style"])
+        writer.writerow(["file", "name", "expected_label", "expected_nice_count", "header_style", "years", "skills", "location"])
         writer.writerows(rows)
 
     strong = sum(1 for row in rows if row[2] == "strong_match")
