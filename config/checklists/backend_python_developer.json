@@ -2,11 +2,23 @@
   "job_id": "backend_python_developer",
   "title": "Backend Python Developer",
   "must_have": {
-    "min_years_experience": 2,
-    "required_skills": ["Python", "SQL"],
-    "locations": ["Ahmedabad", "Gandhinagar", "Gujarat"]
+    "min_years_experience": 2.0,
+    "required_skills": [
+      "Python",
+      "SQL"
+    ],
+    "locations": [
+      "Ahmedabad",
+      "Gandhinagar",
+      "Gujarat"
+    ]
   },
   "nice_to_have": {
-    "skills": ["Docker", "AWS", "FastAPI", "Kubernetes"]
+    "skills": [
+      "Docker",
+      "AWS",
+      "FastAPI",
+      "Kubernetes"
+    ]
   }
 }

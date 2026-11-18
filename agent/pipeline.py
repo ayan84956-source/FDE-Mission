@@ -51,6 +51,35 @@ def run(folder, job_name, force= False):
     print("\nDone", counts)
     return job_name
 
+def rescore(job_name):
+    """Check the saved facts against the current checklist. No model is used."""
+    database.init_db()
+    checklist = load_checklist(job_name)
+    job_id = checklist["job_id"]
+
+    count = 0
+    for row in database.list_candidates(job_id):
+        if row["read_status"] != "ok":
+            continue
+
+        facts = {
+            "skills": row["skills"],
+            "unverified_skills": row["unverified_skills"],
+            "total_years_experience": row["years_experience"],
+            "location": row["location"],
+            "education": row["education"],
+            "job_titles": row["job_titles"],
+        }
+        evaluation = evaluate(facts, checklist)
+        score = calculate_score(evaluation)
+        database.save_result(
+            row["source_file"], job_id, "ok", facts, evaluation, score,
+            display_name=row["display_name"],
+        )
+        count += 1
+
+    return count
+
 if __name__=="__main__":
     job_id = run(settings.SAMPLE_DATA, "backend_python_developer")
     print("\nRanked List:")
