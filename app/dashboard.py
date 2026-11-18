@@ -1,5 +1,4 @@
 import streamlit as st
-
 from agent import database
 from config import settings
 
@@ -25,7 +24,7 @@ if not candidates:
     st.info("No resumes yet. Run the pipeline first.")
 else:
     for row in candidates:
-        title = f"{row['source_file']}  |  {row['label']}  |  {row['decision']}"
+        title = f"{row['display_name'] or 'Name not found'}  ({row['source_file']})  |  {row['label']}  |  {row['decision']}"
         with st.expander(title):
             st.write(row["summary"] or row["note"])
 
