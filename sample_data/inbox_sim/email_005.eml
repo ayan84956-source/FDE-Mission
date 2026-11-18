@@ -1,0 +1,36 @@
+From: kabir.desai@example.com
+To: hr@example-company.com
+Subject: Application for Backend Python Developer
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3578109230222528764=="
+
+--===============3578109230222528764==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Resume and my photo are attached.
+
+--===============3578109230222528764==
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="resume_02.txt"
+MIME-Version: 1.0
+
+S2FiaXIgRGVzYWkNCkVtYWlsOiBrYWJpci5kZXNhaUBleGFtcGxlLmNvbSB8IFBob25lOiA5OFhY
+WFhYWDAyDQpNYWxlIHwgMjcgeWVhcnMgfCBNYXJyaWVkDQpMb2NhdGlvbjogU3VyYXQsIEd1amFy
+YXQNCg0KU1VNTUFSWQ0KQmFja2VuZCBkZXZlbG9wZXIgd2l0aCBleHBlcmllbmNlIGJ1aWxkaW5n
+IEFQSXMuDQoNCkVYUEVSSUVOQ0UNClNvZnR3YXJlIEVuZ2luZWVyLCBUZWNoQ29ycCAoMjAxOCAt
+IFByZXNlbnQpIC0gOCB5ZWFycw0KLSBCdWlsdCBSRVNUIEFQSXMgaW4gUHl0aG9uLg0KLSBXb3Jr
+ZWQgd2l0aCBTUUwgZGF0YWJhc2VzLg0KLSBDdXJyZW50bHkgbGVhcm5pbmcgRG9ja2VyLg0KDQpF
+RFVDQVRJT04NCkIuVGVjaCBpbiBDb21wdXRlciBFbmdpbmVlcmluZywgMjAxNw0KDQpTS0lMTFMN
+ClB5dGhvbiwgR2l0LCBTUUwsIEt1YmVybmV0ZXM=
+
+--===============3578109230222528764==
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="photo.jpg"
+MIME-Version: 1.0
+
+bm90IGEgcmVhbCBpbWFnZQ==
+
+--===============3578109230222528764==--

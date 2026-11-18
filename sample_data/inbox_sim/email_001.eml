@@ -1,0 +1,27 @@
+From: aarav.patel@example.com
+To: hr@example-company.com
+Subject: Application for Backend Python Developer
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3998469712224526035=="
+
+--===============3998469712224526035==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello, please find my resume attached.
+
+--===============3998469712224526035==
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="resume_00.txt"
+MIME-Version: 1.0
+
+QWFyYXYgUGF0ZWwNCkVtYWlsOiBhYXJhdi5wYXRlbEBleGFtcGxlLmNvbSB8IFBob25lOiA5OFhY
+WFhYWDAwDQpMb2NhdGlvbjogU3VyYXQsIEd1amFyYXQNCg0KU1VNTUFSWQ0KQmFja2VuZCBkZXZl
+bG9wZXIgd2l0aCBleHBlcmllbmNlIGJ1aWxkaW5nIEFQSXMuDQoNCkVYUEVSSUVOQ0UNClNvZnR3
+YXJlIEVuZ2luZWVyLCBUZWNoQ29ycCAoMjAyNSAtIFByZXNlbnQpIC0gMSB5ZWFycw0KLSBCdWls
+dCBSRVNUIEFQSXMgaW4gUHl0aG9uLg0KLSBXb3JrZWQgd2l0aCBTUUwgZGF0YWJhc2VzLg0KDQpF
+RFVDQVRJT04NCkIuVGVjaCBpbiBDb21wdXRlciBFbmdpbmVlcmluZywgMjAyNA0KDQpTS0lMTFMN
+ClB5dGhvbiwgR2l0LCBTUUw=
+
+--===============3998469712224526035==--

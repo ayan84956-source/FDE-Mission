@@ -1,0 +1,28 @@
+From: diya.shah@example.com
+To: hr@example-company.com
+Subject: Applying: Python Developer, Gandhinagar
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============1343829326926558268=="
+
+--===============1343829326926558268==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear HR team, I am interested in this role. Resume attached.
+
+--===============1343829326926558268==
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="resume_01.txt"
+MIME-Version: 1.0
+
+RGl5YSBTaGFoDQpFbWFpbDogZGl5YS5zaGFoQGV4YW1wbGUuY29tIHwgUGhvbmU6IDk4WFhYWFhY
+MDENCkdlbmRlcjogRmVtYWxlDQpBZ2U6IDI2DQpEYXRlIG9mIEJpcnRoOiAxMi8wMy8xOTk4DQpM
+b2NhdGlvbjogU3VyYXQsIEd1amFyYXQNCg0KU1VNTUFSWQ0KQmFja2VuZCBkZXZlbG9wZXIgd2l0
+aCBleHBlcmllbmNlIGJ1aWxkaW5nIEFQSXMuDQoNCkVYUEVSSUVOQ0UNClNvZnR3YXJlIEVuZ2lu
+ZWVyLCBUZWNoQ29ycCAoMjAxOCAtIFByZXNlbnQpIC0gOCB5ZWFycw0KLSBCdWlsdCBSRVNUIEFQ
+SXMgaW4gUHl0aG9uLg0KLSBXb3JrZWQgd2l0aCBTUUwgZGF0YWJhc2VzLg0KDQpFRFVDQVRJT04N
+CkIuVGVjaCBpbiBDb21wdXRlciBFbmdpbmVlcmluZywgMjAxNw0KDQpTS0lMTFMNClB5dGhvbiwg
+R2l0LCBTUUwsIEFXUw==
+
+--===============1343829326926558268==--
