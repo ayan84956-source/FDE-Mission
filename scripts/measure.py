@@ -1,15 +1,19 @@
 import csv
+
 from agent import database
 from config import settings
 
 FOLDER = settings.ROOT / "sample_data" / "test_set"
 JOB_ID = "backend_python_developer"
 
+
 def count_nice(row):
+    """How many nice-to-have rules were met for one saved resume."""
     if not row["rule_rows"]:
         return 0
     items = row["rule_rows"]["nice_to_have"]
-    return sum(1 for item in items if item["status"]== "met")
+    return sum(1 for item in items if item["status"] == "met")
+
 
 def main():
     with open(FOLDER / "answers.csv", encoding="utf-8") as file:
@@ -58,4 +62,4 @@ def main():
     print(f"Nice-to-have count agreement: {nice_agree} of {total}")
 
 if __name__ == "__main__":
-    main() 
+    main()
