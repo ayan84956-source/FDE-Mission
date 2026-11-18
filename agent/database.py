@@ -33,7 +33,7 @@ STATUS_NOTES = {
     "unreadable": "Could not open the file, please check manually",
     "unsupported": "Unsupported file type, please check manually",
     "model_failed": "The AI could not read this resume, please check manually",
-}
+    "no_attachment": "The email has no attachment, please check it manually",}
 DECISIONS = ("pending", "approved", "rejected")
 
 def connect():

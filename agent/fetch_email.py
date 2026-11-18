@@ -2,9 +2,11 @@ import json
 import re
 from email import policy
 from email.parser import BytesParser
+from agent import database
 from config import settings
 
 INDEX_FILE = settings.INBOX_DIR / ".emails.json"
+JOB_ID = "backend_python_developer"
 
 def safe_name(name):
     return re.sub(r"[^A-Za-z0-9._-]", "_", name)
@@ -36,6 +38,15 @@ def fetch_folder(folder):
             (settings.INBOX_DIR / file_name).write_bytes(data)
             index[file_name] = {"sender": sender, "subject": subject}
             saved.append(file_name)
+
+        if not saved:
+            database.init_db()
+            database.save_result(
+                f"{eml.name} (no attachment)",
+                JOB_ID,
+                "no_attachment",
+                display_name=sender,
+            )
 
         summary.append({"email": eml.name, "sender": sender,
                         "subject": subject, "saved": saved})
