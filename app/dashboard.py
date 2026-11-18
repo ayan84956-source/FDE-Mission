@@ -1,3 +1,4 @@
+import json
 import streamlit as st
 from agent import database
 from config import settings
@@ -6,6 +7,12 @@ JOB_ID = "backend_python_developer"
 
 ICONS = {"met": "✅", "not_met": "❌", "unknown": "❓"}
 
+def load_email_index():
+    """Sender and subject for each saved attachment. Empty if no email was fetched."""
+    path = settings.INBOX_DIR / ".emails.json"
+    if not path.is_file():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
 
 def find_original(file_name):
     for folder in (settings.INBOX_DIR, settings.SAMPLE_DATA):
@@ -14,10 +21,10 @@ def find_original(file_name):
             return path
     return None
 
-
 st.title("Resume Screening")
 
 candidates = database.list_candidates(JOB_ID)
+email_index = load_email_index()
 
 if not candidates:
     st.info("No resumes yet. Run the pipeline first.")
@@ -26,6 +33,10 @@ else:
         title = f"{row['display_name'] or 'Name not found'}  ({row['source_file']})  |  {row['label']}  |  {row['decision']}"
         with st.expander(title):
             st.write(row["summary"] or row["note"])
+
+            sender_info = email_index.get(row["source_file"])
+            if sender_info:
+                st.caption(f"From: {sender_info['sender']} | Subject: {sender_info['subject']}")
 
             rules = row["rule_rows"]
             if rules:
