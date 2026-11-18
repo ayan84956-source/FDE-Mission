@@ -1,10 +1,21 @@
 import streamlit as st
 
 from agent import database
+from config import settings
 
 JOB_ID = "backend_python_developer"
 
 ICONS = {"met": "✅", "not_met": "❌", "unknown": "❓"}
+
+
+def find_original(file_name):
+    """Look for the original resume file. Returns a Path, or None."""
+    for folder in (settings.INBOX_DIR, settings.SAMPLE_DATA):
+        path = folder / file_name
+        if path.is_file():
+            return path
+    return None
+
 
 st.title("Resume Screening")
 
@@ -27,6 +38,17 @@ else:
                 st.subheader("Nice-to-haves")
                 for item in rules["nice_to_have"]:
                     st.write(f"{ICONS[item['status']]} {item['reason']}")
+
+            original = find_original(row["source_file"])
+            if original:
+                st.download_button(
+                    "Open original resume",
+                    data=original.read_bytes(),
+                    file_name=original.name,
+                    key=f"original_{row['id']}",
+                )
+            else:
+                st.caption("Original file not found")
 
             col1, col2, col3 = st.columns(3)
             if col1.button("Approve", key=f"approve_{row['id']}"):
