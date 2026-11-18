@@ -1,0 +1,20 @@
+Vihaan Trivedi
+Email: vihaan.trivedi@example.com | Phone: 98XXXXXX04
+Gender: Female
+Age: 29
+Date of Birth: 12/03/1998
+Location: Pune, Maharashtra
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2025 - Present) - 1 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2024
+
+SKILLS
+Python, Git, SQL, FastAPI, Docker, AWS, Kubernetes

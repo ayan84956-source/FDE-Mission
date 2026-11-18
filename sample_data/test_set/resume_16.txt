@@ -1,0 +1,20 @@
+Arjun Bhatt
+Email: arjun.bhatt@example.com | Phone: 98XXXXXX16
+Gender: Female
+Age: 31
+Date of Birth: 12/03/1998
+Location: Ahmedabad, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2023 - Present) - 3 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2022
+
+SKILLS
+Python, Git, SQL, AWS, Docker

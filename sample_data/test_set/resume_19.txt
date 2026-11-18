@@ -1,0 +1,20 @@
+Sneha Patel
+Email: sneha.patel@example.com | Phone: 98XXXXXX19
+Gender: Female
+Age: 34
+Date of Birth: 12/03/1998
+Location: Gandhinagar, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2023 - Present) - 3 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2022
+
+SKILLS
+Python, Git, SQL, Docker

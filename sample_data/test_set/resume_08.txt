@@ -1,0 +1,18 @@
+Rohan Modi
+Email: rohan.modi@example.com | Phone: 98XXXXXX08
+Male | 33 years | Married
+Location: Ahmedabad, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2018 - Present) - 8 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2017
+
+SKILLS
+Python, Git, SQL, AWS, FastAPI, Kubernetes, Docker

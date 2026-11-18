@@ -16,6 +16,28 @@ PHONE = re.compile(
 NAME_LINE = re.compile(r"^[A-Za-z.'-]+(?: [A-Za-z.'-]+){1,3}$")
 NOT_NAMES = {"resume", "curriculum vitae", "cv"}
 
+HEADER_LINES = 8
+
+PRIVATE_PART = re.compile(
+    r"(?:male|female|man|woman|married|single|unmarried|divorced|"
+    r"\d{2}\s*(?:years|yrs)(?:\s*old)?)",
+    re.IGNORECASE,
+)
+
+
+def clean_header(lines):
+    """Remove private pieces from header lines like 'Male | 27 years | Married'."""
+    result = []
+    for number, line in enumerate(lines):
+        if number < HEADER_LINES and "|" in line:
+            parts = [part.strip() for part in line.split("|")]
+            parts = [part for part in parts if not PRIVATE_PART.fullmatch(part)]
+            if not parts:
+                continue
+            line = " | ".join(parts)
+        result.append(line)
+    return result
+
 def find_name(text):
     """The name is the first non-empty line, if it looks like a name."""
     for line in text.splitlines():
@@ -32,6 +54,7 @@ def anonymize(text):
     name = find_name(text)
 
     lines = [line for line in text.splitlines() if not PRIVATE_LINE.match(line)]
+    lines = clean_header(lines)
     clean = "\n".join(lines)
 
     if name:

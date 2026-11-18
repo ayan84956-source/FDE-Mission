@@ -1,0 +1,19 @@
+Meera Trivedi
+Email: meera.trivedi@example.com | Phone: 98XXXXXX13
+Gender: Female
+Age: 28
+Date of Birth: 12/03/1998
+Location: Pune, Maharashtra
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Fresher, no work experience yet
+- Built a college project in Python.
+
+EDUCATION
+B.Tech in Computer Engineering, 2025
+
+SKILLS
+Python, Git, SQL, FastAPI, Docker

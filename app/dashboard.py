@@ -8,7 +8,6 @@ ICONS = {"met": "✅", "not_met": "❌", "unknown": "❓"}
 
 
 def find_original(file_name):
-    """Look for the original resume file. Returns a Path, or None."""
     for folder in (settings.INBOX_DIR, settings.SAMPLE_DATA):
         path = folder / file_name
         if path.is_file():

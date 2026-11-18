@@ -1,0 +1,20 @@
+Aarav Shah
+Email: aarav.shah@example.com | Phone: 98XXXXXX10
+Gender: Female
+Age: 25
+Date of Birth: 12/03/1998
+Location: Pune, Maharashtra
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2020 - Present) - 6 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2019
+
+SKILLS
+Python, Git, SQL, FastAPI, Kubernetes, AWS, Docker

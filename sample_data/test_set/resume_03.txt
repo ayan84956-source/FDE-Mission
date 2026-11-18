@@ -1,0 +1,16 @@
+Meera Joshi
+Email: meera.joshi@example.com | Phone: 98XXXXXX03
+Location: Gandhinagar, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Fresher, no work experience yet
+- Built a college project in Python.
+
+EDUCATION
+B.Tech in Computer Engineering, 2025
+
+SKILLS
+Python, Git, SQL, AWS, Docker

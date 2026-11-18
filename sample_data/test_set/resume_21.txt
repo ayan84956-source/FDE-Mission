@@ -1,0 +1,17 @@
+Diya Joshi
+Email: diya.joshi@example.com | Phone: 98XXXXXX21
+Location: Surat, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2024 - Present) - 2 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2023
+
+SKILLS
+Python, Git, SQL, AWS, Kubernetes, FastAPI, Docker

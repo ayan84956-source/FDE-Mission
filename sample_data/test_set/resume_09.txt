@@ -1,0 +1,16 @@
+Sneha Gandhi
+Email: sneha.gandhi@example.com | Phone: 98XXXXXX09
+Location: Surat, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Fresher, no work experience yet
+- Built a college project in Python.
+
+EDUCATION
+B.Tech in Computer Engineering, 2025
+
+SKILLS
+Python, Git, SQL, FastAPI, Docker, AWS, Kubernetes

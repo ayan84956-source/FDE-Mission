@@ -1,0 +1,18 @@
+Meera Mehta
+Email: meera.mehta@example.com | Phone: 98XXXXXX23
+Male | 28 years | Married
+Location: Surat, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2025 - Present) - 1 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2024
+
+SKILLS
+Python, Git, SQL

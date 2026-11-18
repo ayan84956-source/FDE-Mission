@@ -1,0 +1,19 @@
+Kabir Desai
+Email: kabir.desai@example.com | Phone: 98XXXXXX02
+Male | 27 years | Married
+Location: Surat, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2018 - Present) - 8 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+- Currently learning Docker.
+
+EDUCATION
+B.Tech in Computer Engineering, 2017
+
+SKILLS
+Python, Git, SQL, Kubernetes

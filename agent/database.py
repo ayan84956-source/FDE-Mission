@@ -144,14 +144,6 @@ def set_decision(resume_id, decision):
         (decision, decided_at, resume_id),
     )
 
-def is_processed(source_file, job_id):
-    """True if this resume was already read successfully for this opening."""
-    rows = fetch(
-        "SELECT 1 FROM resumes WHERE source_file = ? AND job_id = ? AND read_status = 'ok'",
-        (source_file, job_id),
-    )
-    return len(rows) > 0
-
 if __name__ == "__main__":
     from agent.check_rules import evaluate, load_checklist
     from agent.score import calculate_score

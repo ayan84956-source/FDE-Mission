@@ -1,0 +1,18 @@
+Isha Modi
+Email: isha.modi@example.com | Phone: 98XXXXXX17
+Male | 32 years | Married
+Location: Gandhinagar, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2025 - Present) - 1 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2024
+
+SKILLS
+Python, Git, SQL, AWS, Docker, Kubernetes, FastAPI

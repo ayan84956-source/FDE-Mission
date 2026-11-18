@@ -1,0 +1,18 @@
+Sneha Shah
+Email: sneha.shah@example.com | Phone: 98XXXXXX29
+Male | 34 years | Married
+Location: Surat, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2024 - Present) - 2 years
+- Built REST APIs in Java.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2023
+
+SKILLS
+Java, Git, SQL, Docker, Kubernetes

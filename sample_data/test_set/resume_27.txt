@@ -1,0 +1,17 @@
+Isha Gandhi
+Email: isha.gandhi@example.com | Phone: 98XXXXXX27
+Location: Ahmedabad, Gujarat
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2024 - Present) - 2 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2023
+
+SKILLS
+Python, Git, SQL, Docker, Kubernetes, AWS

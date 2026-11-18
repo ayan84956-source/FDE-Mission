@@ -1,0 +1,18 @@
+Vihaan Mehta
+Email: vihaan.mehta@example.com | Phone: 98XXXXXX14
+Male | 29 years | Married
+Location: Mumbai, Maharashtra
+
+SUMMARY
+Backend developer with experience building APIs.
+
+EXPERIENCE
+Software Engineer, TechCorp (2022 - Present) - 4 years
+- Built REST APIs in Python.
+- Worked with SQL databases.
+
+EDUCATION
+B.Tech in Computer Engineering, 2021
+
+SKILLS
+Python, Git, SQL, AWS, FastAPI
