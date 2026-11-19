@@ -144,6 +144,16 @@ def set_decision(resume_id, decision):
         (decision, decided_at, resume_id),
     )
 
+def delete_decided(job_id, decision):
+    """Delete every saved result with this decision. Returns their file names."""
+    rows = fetch(
+        "SELECT source_file FROM resumes WHERE job_id = ? AND decision = ?",
+        (job_id, decision),
+    )
+    run("DELETE FROM resumes WHERE job_id = ? AND decision = ?", (job_id, decision))
+    return [row["source_file"] for row in rows]
+
+
 def is_processed(source_file, job_id):
     """True if this resume was already read successfully for this opening."""
     rows = fetch(
