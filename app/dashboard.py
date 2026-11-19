@@ -11,6 +11,14 @@ ICONS = {"met": "✅", "not_met": "❌", "unknown": "❓"}
 LABEL_ICONS = {"strong_match": "🟢", "needs_review": "🟡"}
 LABEL_TEXT = {"strong_match": "Strong match", "needs_review": "Needs review"}
 DECISION_ICONS = {"pending": "⏳", "approved": "✅", "rejected": "❌"}
+PROBLEM_TEXT = {
+    "unsupported": "Unsupported file",
+    "needs_ocr": "Scanned file",
+    "unreadable": "Unreadable file",
+    "model_failed": "AI could not read it",
+    "no_attachment": "No attachment",
+    "pipeline_error": "Processing error",
+}
 ORIGINAL_FOLDERS = (
     settings.INBOX_DIR,
     settings.SAMPLE_DATA,
@@ -84,11 +92,14 @@ else:
         st.info("No candidates in this view.")
 
     for row in shown:
-        person = row["display_name"] or "Name not found"
+        person = row["display_name"] or row["source_file"]
         label = row["label"]
+        problem = row["read_status"] != "ok"
+        icon = "🔴" if problem else LABEL_ICONS.get(label, "⚪")
+        text = PROBLEM_TEXT.get(row["read_status"], "Problem") if problem else LABEL_TEXT.get(label, label)
         title = (
-            f"{LABEL_ICONS.get(label, '⚪')} **{person}**  ·  "
-            f"{LABEL_TEXT.get(label, label)}  ·  "
+            f"{icon} **{person}**  ·  "
+            f"{text}  ·  "
             f"{DECISION_ICONS[row['decision']]} {row['decision'].capitalize()}"
         )
         with st.expander(title):
