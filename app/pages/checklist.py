@@ -1,6 +1,7 @@
 import json
 import streamlit as st
 from agent.pipeline import rescore
+from agent import database
 from agent.check_rules import load_checklist
 from config import settings
 
@@ -55,6 +56,12 @@ if st.button("Save checklist"):
 
 st.divider()
 st.write("After saving, apply the checklist to the resumes already on the dashboard.")
+reset_decisions = st.checkbox("Also reset all Approve / Reject decisions to pending")
 if st.button("Re-score saved resumes"):
     count = rescore(JOB_NAME)
-    st.success(f"Re-scored {count} resumes. Open the dashboard to see the new results.")
+    message = f"Re-scored {count} resumes."
+    if reset_decisions:
+        for row in database.list_candidates(checklist["job_id"]):
+            database.set_decision(row["id"], "pending")
+        message += " All decisions were reset to pending."
+    st.success(message + " Open the dashboard to see the new results.")
